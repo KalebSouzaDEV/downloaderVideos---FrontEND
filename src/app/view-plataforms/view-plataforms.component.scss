@@ -1,0 +1,16 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h1 {
+    color: white;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.content a {
+    margin-top: -30px;
+}

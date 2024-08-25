@@ -1,0 +1,28 @@
+.footer-component {
+    background-color: #131111;
+    display: flex;
+    justify-content: space-around;
+    height: 140px;
+    padding-top: 10px;
+}
+
+.tecnologies {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tecnologies img {
+    cursor: pointer;
+}
+
+#java-logo {
+    margin-top: -18px;
+}
+
+h3 {
+    font-weight: 700; 
+}
+
+h3, h4, p {
+    color: white;
+}

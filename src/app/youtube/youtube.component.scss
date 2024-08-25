@@ -1,0 +1,150 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    height: 60px;
+    margin-bottom: 100px;
+}
+
+.button-input {
+    background-color: white;
+    border-radius: 15px;
+    width: 35%;
+    height: 100%;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+
+}
+
+.button-input input {
+    height: 100%;
+    outline: none; /* Remove a borda padrão do navegador no foco */
+    border: none;
+    width: 80%;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.button-input input:focus {
+    border: none; /* Remove a borda quando o campo de entrada está em foco */
+    box-shadow: none; /* Remove o efeito de sombra ao redor */
+}
+
+.button-input button {
+    height: 80%;
+    width: 25%;
+    background-color: #BA0202;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 28px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.view-video {
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px 25px 15px 25px;
+    width: 30%;
+}
+
+.content-image img {
+    width: 250px;
+    height: 211px;
+    border-radius: 10px;
+}
+
+.infos-container { 
+    display: flex;
+    gap: 10px;
+}
+
+.buttons-action button{
+    background-color: #7D2121;
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.info-video { 
+    display: flex;
+}
+
+.info-video i {
+    padding-top: 5px;
+    margin-right: 3px;
+}
+
+.buttons-action {
+    margin-top: 10px;
+}
+
+.content-video { 
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.content-video h2 {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.content-video h4 {
+    margin-top: 4px;
+    margin-bottom: 0px;
+    color: #393030;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.rotating-ball {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    display: block;
+    border: 4px solid #7D2121;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: rotate 2s linear infinite; /* Animação de movimento */
+}
+
+.isDownloading {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.isDownloading h3 {
+    color: white;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg); /* Inclina a imagem para o lado */
+    }
+    100% {
+     transform: rotate(360deg); /* Inclina a imagem para o lado */
+    }
+  }
+  

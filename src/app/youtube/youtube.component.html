@@ -1,0 +1,47 @@
+<div> 
+    <div class="content">
+        <div class="button-input">
+            <input type="text" placeholder="Digite o link do vídeo" [(ngModel)]="videoLink">
+            <button (click)="getVideoInfos(videoLink)">Baixar</button>
+        </div>
+    </div> 
+    
+    <h2 *ngIf="linkIsNotValid == true" style="text-align: center; color: white;">Link Inválido!</h2>
+
+    <div *ngIf="videoImageLink !== null" class="content">
+        <div class="view-video">
+            <div class="content-image">
+                <img src={{videoImageLink}} alt="">
+            </div>
+            <div class="content-video">
+                <h2>{{videoTitle}}</h2>
+                <h4>{{videoChannelName}}</h4>
+                <div class="infos-container">
+                    <div class="info-video">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <h4>{{likes}}</h4>
+                    </div>
+                    <div class="info-video">
+                        <i class="fa-solid fa-eye"></i>
+                        <h4>{{views}}</h4>
+                    </div>
+                    <div class="info-video">
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <h4>{{comments}}</h4>
+                    </div>
+                </div>
+                <div class="buttons-action">
+                    <button (click)="downloadFullVideo(videoLink)">Baixar Video Completo</button>
+                    <button (click)="downloadOnlyAudio(videoLink)">Baixar Somente Áudio</button>
+                    <button (click)="downloadOnlyVideo(videoLink)">Baixar Somente Vídeo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div *ngIf="isDownloading == true" class="isDownloading">
+        <span class="rotating-ball"></span>
+        <h3>Seu download está sendo processado...</h3>
+    </div>
+
+</div>
